@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="Style.css" rel="stylesheet" />
+    <title>Gym Waihi Beach | Body Mechanics Gym Waihi</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="bodyMechanicsIcon.png">
+    <meta name="description" content="Body Mechanics Gym in Waihi Beach, Check us out!">
+    <meta name="keywords" content="Body Mechanics, Body Mechanics Gym, Gym Waihi, Waihi Beach, Fred Frauendorf, Gym in Waihi, Great Gym, Casual Gym">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <a href="http://www.bodymechanicsgym.co.nz/index.html" class="logo" title="Body Mechanics Gym">
+                <img src="bodyMechanicsLogo.png" alt="Body Mechanics Gym" />
+            </a>
+            <nav>
+                <a href="http://www.bodymechanicsgym.co.nz/index.html " class="active">Home</a>
+                <a href="http://www.bodymechanicsgym.co.nz/join.html ">Join</a>
+                <a href="http://www.bodymechanicsgym.co.nz/whyus.html">Why Us</a>
+                <a href="http://www.bodymechanicsgym.co.nz/articles.html ">Articles</a>
+                <a href="http://www.bodymechanicsgym.co.nz/faqs.html ">FAQ's</a>
+                <a href="http://www.bodymechanicsgym.co.nz/contact.html ">Contact</a>
+            </nav>
+        </header>
+        <!-- Slider main container -->
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="gymfront.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="wholegym.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="boxingbag3.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="spinbikes.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="weightrack.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="swiper-slide" src="gymbagtramp.jpg" alt="">
+                </div>
+                ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <style>
+            .swiper-container {
+                max-width: 600px;
+                max-height: 350px;
+                width: 100%;
+                margin-top: 30px;
+            }
+        </style>
+        <section class="benefits">
+            <div>
+                <ul>
+                    <li>24/7 Gym</li>
+                    <li>Great Equipment</li>
+                    <li>Waihi Beach Location</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Friendly Owners</li>
+                    <li>Protein Available</li>
+                    <li>Personal Training Available</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Body Mechanics, Don't forget to check out our
+                <a href="https://www.facebook.com/bodymechanicswb" target="_blank" title="Body Mechanics Facebook Page">Body Mechanics Facebook Page</a>
+            </p>
+        </footer>
+    </div>
+    <script src="check.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>

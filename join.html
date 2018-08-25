@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Join | Body Mechanics Gym Waihi Beach</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="Style.css" rel="stylesheet" />
+    <script src="check.js"></script>
+    <link rel="icon" href="bodyMechanicsIcon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta name="description" content="Body Mechanics Gym in Waihi Beach, Check us out!">
+    <meta name="keywords" content="Body Mechanics, Body Mechanics Gym, Gym Waihi, Waihi Beach, Fred Frauendorf, Gym in Waihi, Great Gym, Casual Gym">
+</head>
+
+<body ng-app="">
+    <div id="main">
+        <header>
+            <a href="http://www.bodymechanicsgym.co.nz/index.html" class="logo" title="Body Mechanics Gym">
+                <img src="bodyMechanicsLogo.png" alt="Body Mechanics Gym" />
+            </a>
+            <nav>
+                <a href="http://www.bodymechanicsgym.co.nz/index.html">Home</a>
+                <a href="http://www.bodymechanicsgym.co.nz/join.html" class="active">Join</a>
+                <a href="http://www.bodymechanicsgym.co.nz/whyus.html">Why Us</a>
+                <a href="http://www.bodymechanicsgym.co.nz/articles.html ">Articles</a>
+                <a href="http://www.bodymechanicsgym.co.nz/faqs.html ">FAQ's</a>
+                <a href="http://www.bodymechanicsgym.co.nz/contact.html ">Contact</a>
+            </nav>
+        </header>
+        <div ng-show="myVar" style="overflow-x:auto;">
+            <table>
+                <caption>Price Structure</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Membership Type</th>
+                        <th scope="col">Joining Fee</th>
+                        <th scope="col">Admin Fee</th>
+                        <th scope="col">Weekly Rate</th>
+                        <th scope="col">First Week Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Membership Type">12-Month 24/7</td>
+                        <td data-label="Joining Fee">$50.00</td>
+                        <td data-label="Admin Fee">$15.00</td>
+                        <td data-label="Weekly Rate">$15.00</td>
+                        <td data-label="First Week Total">$80.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" data-label="Membership Type">6-Month 24/7</td>
+                        <td data-label="Joining Fee">$50.00</td>
+                        <td data-label="Admin Fee">$15.00</td>
+                        <td data-label="Weekly Rate">$18.00</td>
+                        <td data-label="First Week Total">$83.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" data-label="Membership Type">3-Month 24/7</td>
+                        <td data-label="Joining Fee">$50.00</td>
+                        <td data-label="Admin Fee">$15.00</td>
+                        <td data-label="Weekly Rate">$20.00</td>
+                        <td data-label="First Week Total">$85.00</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" data-label="Membership Type">Seniors (Gold Card)</td>
+                        <td data-label="Joining Fee">$25.00</td>
+                        <td data-label="Admin Fee">$15.00</td>
+                        <td data-label="Weekly Rate">$10.00</td>
+                        <td data-label="First Week Total">$50.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <style>
+                table {
+                    border: 1px solid #ccc;
+                    border-collapse: collapse;
+                    margin: 0;
+                    padding: 0;
+                    width: 100%;
+                    table-layout: fixed;
+                    margin-top: 20px;
+                }
+
+                table caption {
+                    font-size: 1.5em;
+                    margin: .5em 0 .75em;
+                }
+
+                table tr {
+                    background-color: #f8f8f8;
+                    border: 1px solid #ddd;
+                    padding: .35em;
+                }
+
+                table th,
+                table td {
+                    padding: .625em;
+                    text-align: center;
+                }
+
+                table th {
+                    font-size: .85em;
+                    letter-spacing: .1em;
+                    text-transform: uppercase;
+                }
+
+                @media screen and (max-width: 600px) {
+                    table {
+                        border: 0;
+                    }
+
+                    table caption {
+                        font-size: 1.3em;
+                    }
+
+                    table thead {
+                        border: none;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                    }
+
+                    table tr {
+                        border-bottom: 3px solid #ddd;
+                        display: block;
+                        margin-bottom: .625em;
+                    }
+
+                    table td {
+                        border-bottom: 1px solid #ddd;
+                        display: block;
+                        font-size: .8em;
+                        text-align: right;
+                    }
+
+                    table td::before {
+                        /*
+        * aria-label has no advantage, it won't be read inside a table
+        content: attr(aria-label);
+        */
+                        content: attr(data-label);
+                        float: left;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+
+                    table td:last-child {
+                        border-bottom: 0;
+                    }
+                }
+            </style>
+        </div>
+        <section class="join-us">
+            <div>
+                <h2>Price</h2>
+                <ul>
+                    <li>From $15 per week</li>
+                    <li>Seniors only pay $10 a week</li>
+                    <li>Casual workout just $10</li>
+                    <li>Full Price Structure
+                        <input type="checkbox" ng-model="myVar">
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2>Get Started</h2>
+                <p>
+                    <a href="https://oc.debitsuccess.com/DDR/?brandtemplateid=33ebcea5-7514-4e47-bb03-cf964a457251" title="Our Sign Up Page">Click Here to Sign Up</a> and call
+                    <a href="tel:0274866003">Fred</a> for a friendly helpful introduction!
+                </p>
+            </div>
+            <div>
+                <h2>Accepted Payment</h2>
+                <p>We accept: </p>
+                <ul>
+                    <li>Cash</li>
+                    <li>Direct Debit</li>
+                    <li>Automatic Payment</li>
+                </ul>
+            </div>
+        </section>
+        <section class="benefits">
+            <div>
+                <ul>
+                    <li>24/7 Gym</li>
+                    <li>Great Equipment</li>
+                    <li>Waihi Beach Location</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Friendly Owners</li>
+                    <li>Protein Available</li>
+                    <li>Personal Training Available</li>
+                </ul>
+            </div>
+        </section>
+        <footer>
+            <p>
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear())</script> Body Mechanics, Don't forget to check out our
+                <a href="https://www.facebook.com/bodymechanicswb" target="_blank" title="Body Mechanics Facebook Page">Body Mechanics Facebook Page</a>
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>
