@@ -297,6 +297,11 @@ input[type=checkbox] {
     width: 50%;
 }
 
+.why-us div img {
+    border: 4px black solid;
+    border-radius: 2px;
+}
+
 .why-us h2 {
     color: #df1327;
 }
